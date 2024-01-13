@@ -129,10 +129,10 @@ public class AttenteFenetre extends JFrame{
 
 
 
-        JRadioButton rdbtnBattle = new JRadioButton("En locale");
+        /*JRadioButton rdbtnBattle = new JRadioButton("En locale");
         rdbtnBattle.setBounds(50, 440, 109, 23);
         rdbtnBattle.setForeground(Color.BLACK);
-        getContentPane().add(rdbtnBattle);
+        getContentPane().add(rdbtnBattle);*/
 
         JRadioButton rdbtnOLBattle = new JRadioButton("Enligne");
         rdbtnOLBattle.setForeground(Color.BLACK);
@@ -151,7 +151,7 @@ public class AttenteFenetre extends JFrame{
         group.add(rdbtnWha);
         group.add(rdbtnHumanVs);*/
         group.add(rdbtnOLBattle);
-        group.add(rdbtnBattle);
+
         group.setSelected(rdbtnNewRadioButton.getModel(), true);
 
         JButton btnNewButton = new JButton("Creer une salle");
@@ -174,8 +174,8 @@ public class AttenteFenetre extends JFrame{
                 if (rdbtnNewRadioButton.isSelected()){
                     client.output.println("Solo");
 
-                } else if (rdbtnBattle.isSelected()){
-                    client.output.println("Battle");
+              /*  } else if (rdbtnBattle.isSelected()){
+                    client.output.println("Battle");*/
                 } else if (rdbtnOLBattle.isSelected()){
                     client.output.println("Online Battle");
                 }
